@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family: 'Comic Neve', cursive;
+}
+
+:root {
+    --loading-width: 160px;
+    --loading-height: 22px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    text-align: center;
+    width: 90vw;
+}
+
+.box {
+    display: inline-block;
+    border: solid black 4px;
+    width: var(--loading-width);
+    background-color: #fff;
+}
+
+.loading-box{
+    height: var(--loading-height);
+    width: var(--loading-width);
+    background-color: blueviolet;
+    animation: loading 5s;
+}
+
+@keyframes loading{
+    0%{
+        background-color: yellowgreen;
+        width: 0;
+    }
+    100%{
+        width: 160px;
+    }
+}
+
+#state-message {
+    font-size: large;
+    font-weight: bold;
+    color: rgb(109, 109, 109);
+}
+
+#title,
+#result {
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+#me {
+    margin-top: 8px;
+    margin-bottom: 14px;
+}
+
+.box {
+    margin-top: 3px;
+}
